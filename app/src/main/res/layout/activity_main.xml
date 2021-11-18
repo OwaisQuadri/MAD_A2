@@ -8,15 +8,15 @@
 
 
     <EditText
-        android:id="@+id/latEditText"
+        android:id="@+id/longEditText"
         android:layout_width="156dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="72dp"
         android:ems="10"
-        android:hint="lattitude"
+        android:hint="longitude E"
         android:inputType="numberSigned|numberDecimal"
-        app:layout_constraintStart_toEndOf="@+id/longEditText"
+        app:layout_constraintStart_toEndOf="@+id/lattEditText"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -28,16 +28,16 @@
         android:text="Search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/latEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/longEditText" />
 
     <EditText
-        android:id="@+id/longEditText"
+        android:id="@+id/lattEditText"
         android:layout_width="156dp"
         android:layout_height="50dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="72dp"
         android:ems="10"
-        android:hint="longitude"
+        android:hint="latitude N"
         android:inputType="numberSigned|numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -52,4 +52,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchBtn" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchEditText">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/searchEditText"
+        android:layout_width="291dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:hint="Search Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
